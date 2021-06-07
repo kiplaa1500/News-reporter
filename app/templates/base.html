@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/mdb.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+    <title> {{title}} </title>
+</head>
+
+<body>
+    <nav class="test" style="background: rgb(75, 72, 72);">
+        <h1 style="color:blueviolet;text-align: center;padding: 10px;">@DEN NEWS</h1>
+    </nav>
+    <!-- <a class="navbar-brand" href="/"> Home </a> -->
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>
