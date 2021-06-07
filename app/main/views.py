@@ -12,7 +12,7 @@ def index():
     all_news_sources = get_all_news_sources()
     everything_news_items = get_everything_news()
     business_headliness = get_business_headlines()
-    title = "News"
+    title = "News App"
     search_article = request.args.get('article_query')
     if search_article:
         return redirect(url_for('.search', source_name=search_article))
@@ -25,7 +25,7 @@ def news_healines(source):
     """
     This function retrieves live top and breaking headlines for a country.
     """
-    title = "News headlines"
+    title = "News App"
     news_healines = get_all_news_headlines(source)
     return render_template('news_articles.html', headlines=news_healines, title=title)
 
