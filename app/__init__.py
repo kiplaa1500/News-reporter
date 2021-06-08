@@ -19,4 +19,4 @@ def create_app(config_name):
 
     return app
 
-from app import views
+# from app import views

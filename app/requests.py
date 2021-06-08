@@ -185,7 +185,7 @@ def search_articles(source):
     Create the request and process the results.
 
     """
-    search_article_url = 'https: // newsapi.org/v2/everything?q = {} & from = 2021-05-06 & sortBy = publishedAt & apiKey = {}'.format(
+    search_article_url = 'https: // newsapi.org/v2/everything?q = {} & from = 2021-08-06 & sortBy = publishedAt & apiKey = {}'.format(
         
         source, api_key)
     with urllib.request.urlopen(search_article_url) as url:
